@@ -12,7 +12,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Enhanced Navigation */}
-      <nav className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-xl shadow-sm z-50">
+      <nav className="fixed top-0 left-0 right-0 bg-white/70 backdrop-blur-xl shadow-lg z-50 border-b border-white/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex-shrink-0">
@@ -55,7 +55,7 @@ export default function HomePage() {
                   href="https://book.squareup.com/appointments/4goy5s8ovk67r0/location/LMW7ZYEASQEDT/services"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white bg-rose-500 hover:bg-rose-600 px-4 py-2 rounded-full font-medium shadow transition-colors duration-200 ml-2"
+                  className="text-white bg-rose-500 hover:bg-rose-600 px-4 py-2 rounded-full font-medium shadow transition-all duration-200 ml-2 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-rose-400 focus:ring-offset-2 animate-glow"
                 >
                   Book
                 </a>
@@ -110,32 +110,37 @@ export default function HomePage() {
           <div className="w-1/2 relative">
             <Image src="/images/home2.jpg" alt="Professional Nail Art" fill className="object-cover" priority />
           </div>
-          <div className="absolute inset-0 bg-black/40"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-black/60"></div>
         </div>
 
-        <div className="relative z-10 text-center text-white px-4">
-          <h1 className="text-5xl md:text-8xl font-bold mb-6 animate-fade-in tracking-tight">Emmy's Spa</h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto font-light">
-            Your Premier Beauty Destination in St Pete Beach
-          </p>
+        <div className="relative z-10 text-center text-white px-4 animate-fade-in">
+          <h1 className="text-5xl md:text-8xl font-bold mb-6 tracking-tight drop-shadow-2xl animate-fade-in-up">Emmy's Spa</h1>
+          <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto font-light animate-fade-in-up delay-100">Your Premier Beauty Destination in St Pete Beach</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/services">
-              <Button className="enhanced-button bg-rose-500 hover:bg-rose-600 text-white px-8 py-4 text-lg rounded-full font-medium shadow-lg">
+              <Button className="enhanced-button bg-rose-500 hover:bg-rose-600 text-white px-8 py-4 text-lg rounded-full font-medium shadow-lg transition-transform duration-200 transform hover:scale-105 animate-glow">
                 Explore Our Services
               </Button>
             </Link>
             <a
-              href="   https://book.squareup.com/appointments/4goy5s8ovk67r0/location/LMW7ZYEASQEDT/services"
+              href="https://book.squareup.com/appointments/4goy5s8ovk67r0/location/LMW7ZYEASQEDT/services"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button className="enhanced-button bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/30 px-8 py-4 text-lg font-medium rounded-full shadow-lg">
+              <Button className="enhanced-button bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/30 px-8 py-4 text-lg font-medium rounded-full shadow-lg transition-transform duration-200 transform hover:scale-105 animate-glow">
                 Book Appointment
               </Button>
             </a>
           </div>
         </div>
       </section>
+
+      {/* Wavy SVG divider between hero and services */}
+      <div className="-mt-2">
+        <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-16 md:h-24">
+          <path fill="#fff" d="M0,0 C480,100 960,0 1440,100 L1440,100 L0,100 Z" />
+        </svg>
+      </div>
 
       {/* Services Preview Section */}
       <section className="py-24 bg-gradient-to-b from-rose-50 to-white">
@@ -148,7 +153,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="enhanced-card bg-white rounded-2xl p-8 shadow-lg text-center">
+            <div className="enhanced-card bg-white/80 backdrop-blur-lg rounded-2xl p-8 shadow-lg text-center transition-transform duration-200 hover:scale-105 hover:shadow-2xl hover:bg-white/90">
               <div className="w-16 h-16 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <div className="w-8 h-8 bg-rose-400 rounded-full"></div>
               </div>
@@ -159,7 +164,7 @@ export default function HomePage() {
               <p className="text-2xl font-bold text-rose-500">Starting at $20</p>
             </div>
 
-            <div className="enhanced-card bg-white rounded-2xl p-8 shadow-lg text-center">
+            <div className="enhanced-card bg-white/80 backdrop-blur-lg rounded-2xl p-8 shadow-lg text-center transition-transform duration-200 hover:scale-105 hover:shadow-2xl hover:bg-white/90">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <div className="w-8 h-8 bg-blue-400 rounded-full"></div>
               </div>
@@ -170,7 +175,7 @@ export default function HomePage() {
               <p className="text-2xl font-bold text-rose-500">Starting at $25</p>
             </div>
 
-            <div className="enhanced-card bg-white rounded-2xl p-8 shadow-lg text-center">
+            <div className="enhanced-card bg-white/80 backdrop-blur-lg rounded-2xl p-8 shadow-lg text-center transition-transform duration-200 hover:scale-105 hover:shadow-2xl hover:bg-white/90">
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <div className="w-8 h-8 bg-green-400 rounded-full"></div>
               </div>

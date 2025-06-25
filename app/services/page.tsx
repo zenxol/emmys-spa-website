@@ -167,7 +167,7 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50">
+      <nav className="fixed top-0 left-0 right-0 bg-white/70 backdrop-blur-xl shadow-lg z-50 border-b border-white/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex-shrink-0">
@@ -206,6 +206,14 @@ export default function ServicesPage() {
                 >
                   Contact
                 </Link>
+                <a
+                  href="https://book.squareup.com/appointments/4goy5s8ovk67r0/location/LMW7ZYEASQEDT/services"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white bg-rose-500 hover:bg-rose-600 px-4 py-2 rounded-full font-medium shadow transition-all duration-200 ml-2 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-rose-400 focus:ring-offset-2 animate-glow"
+                >
+                  Book
+                </a>
               </div>
             </div>
 
@@ -249,11 +257,17 @@ export default function ServicesPage() {
       <section className="pt-24 pb-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h1 className="text-5xl font-bold text-gray-800 mb-6">Our Services</h1>
+            <h1 className="text-5xl font-bold text-gray-800 mb-6 drop-shadow-2xl animate-fade-in-up">Our Services</h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Discover our comprehensive range of beauty and wellness services, each designed to enhance your natural
               beauty and promote relaxation.
             </p>
+          </div>
+
+          <div className="-mt-2">
+            <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-16 md:h-24">
+              <path fill="#fff" d="M0,0 C480,100 960,0 1440,100 L1440,100 L0,100 Z" />
+            </svg>
           </div>
 
           <div className="space-y-12">
