@@ -51,6 +51,14 @@ export default function HomePage() {
                 >
                   Contact
                 </Link>
+                <a
+                  href="https://square.site/book/your-business-id"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white bg-rose-500 hover:bg-rose-600 px-4 py-2 rounded-full font-medium shadow transition-colors duration-200 ml-2"
+                >
+                  Book
+                </a>
               </div>
             </div>
 
@@ -116,11 +124,15 @@ export default function HomePage() {
                 Explore Our Services
               </Button>
             </Link>
-            <Link href="/contact">
+            <a
+              href="   https://book.squareup.com/appointments/4goy5s8ovk67r0/location/LMW7ZYEASQEDT/services"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button className="enhanced-button bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-2 border-white/30 px-8 py-4 text-lg font-medium rounded-full shadow-lg">
                 Book Appointment
               </Button>
-            </Link>
+            </a>
           </div>
         </div>
       </section>

@@ -188,9 +188,15 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <Button className="mt-8 bg-rose-400 hover:bg-rose-500 text-white px-8 py-3 text-lg">
-                Schedule Appointment
-              </Button>
+              <a
+                href="https://book.squareup.com/appointments/4goy5s8ovk67r0/location/LMW7ZYEASQEDT/services"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="mt-8 bg-rose-400 hover:bg-rose-500 text-white px-8 py-3 text-lg">
+                  Schedule Appointment
+                </Button>
+              </a>
             </div>
 
             {/* Google Maps */}
