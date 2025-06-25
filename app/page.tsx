@@ -52,7 +52,7 @@ export default function HomePage() {
                   Contact
                 </Link>
                 <a
-                  href="https://square.site/book/your-business-id"
+                  href="https://book.squareup.com/appointments/4goy5s8ovk67r0/location/LMW7ZYEASQEDT/services"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white bg-rose-500 hover:bg-rose-600 px-4 py-2 rounded-full font-medium shadow transition-colors duration-200 ml-2"
