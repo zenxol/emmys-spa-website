@@ -314,6 +314,9 @@ export default function ServicesPage() {
             <div>
               <h3 className="text-2xl font-bold text-rose-400 mb-4">Emmy's Spa</h3>
               <p className="text-gray-300 mb-4">Your premier beauty destination in St Pete Beach, Florida.</p>
+              <div className="mb-2">
+                <span className="block text-md font-semibold text-gray-200 mb-2">Reviews & Socials</span>
+              </div>
               <div className="flex space-x-4">
                 <a
                   href="https://www.facebook.com/beautyandmorebyemmy/"

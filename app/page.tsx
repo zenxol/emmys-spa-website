@@ -103,11 +103,11 @@ export default function HomePage() {
 
       {/* Hero Section with Background Images */}
       <section className="relative h-screen flex items-center justify-center">
-        <div className="absolute inset-0 z-0 flex">
-          <div className="w-1/2 relative">
+        <div className="absolute inset-0 z-0 flex flex-col md:flex-row">
+          <div className="w-full md:w-1/2 h-1/2 md:h-full relative">
             <Image src="/images/home1.jpg" alt="Professional Hair Styling" fill className="object-cover" priority />
           </div>
-          <div className="w-1/2 relative">
+          <div className="w-full md:w-1/2 h-1/2 md:h-full relative">
             <Image src="/images/home2.jpg" alt="Professional Nail Art" fill className="object-cover" priority />
           </div>
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-black/60"></div>
@@ -229,6 +229,9 @@ export default function HomePage() {
                 Your premier beauty destination in St Pete Beach, Florida. Experience luxury and relaxation like never
                 before.
               </p>
+              <div className="mb-2">
+                <span className="block text-md font-semibold text-gray-700 mb-2">Reviews & Socials</span>
+              </div>
               <div className="flex space-x-4">
                 <a
                   href="https://www.facebook.com/beautyandmorebyemmy/"
