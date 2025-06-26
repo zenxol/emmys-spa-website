@@ -129,7 +129,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-800 text-lg">Phone</p>
-                    <p className="text-gray-600 text-lg">(727) 360-4108</p>
+                    <a href="tel:7273604108" className="text-rose-500 text-lg underline">(727) 360-4108</a>
+                    <span className="block text-sm text-gray-500 mt-1">You can also call to book your appointment!</span>
                   </div>
                 </div>
 

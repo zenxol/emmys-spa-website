@@ -228,6 +228,8 @@ export default function HomePage() {
               <p className="text-gray-600 mb-6 leading-relaxed">
                 Your premier beauty destination in St Pete Beach, Florida. Experience luxury and relaxation like never
                 before.
+                <br />
+                <span className="font-semibold">Prefer to book by phone?</span> Call us at <a href="tel:7273604108" className="text-rose-500 underline">(727) 360-4108</a> to make an appointment!
               </p>
               <div className="mb-2">
                 <span className="block text-md font-semibold text-gray-700 mb-2">Reviews & Socials</span>
@@ -289,9 +291,8 @@ export default function HomePage() {
             <div>
               <h4 className="text-lg font-semibold text-gray-900 mb-6">Contact Info</h4>
               <div className="space-y-3 text-gray-600">
-                <p className="flex items-center">
-                  <span className="font-medium">(727) 360-4108</span>
-                </p>
+                <p className="font-semibold text-gray-800 text-lg">Phone</p>
+                <a href="tel:7273604108" className="text-rose-500 text-lg underline">(727) 360-4108</a>
                 <p>emmyhair75@yahoo.com</p>
                 <p className="leading-relaxed">
                   5995 Gulf Winds Drive

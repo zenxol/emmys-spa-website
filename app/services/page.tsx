@@ -10,6 +10,24 @@ export default function ServicesPage() {
 
   const serviceCategories = [
     {
+      title: "Hair Services",
+      services: [
+        { name: "Men's Cut", price: "$25+" },
+        { name: "Men's Cut w Shampoo", price: "$25+" },
+        { name: "Ladies Cut", price: "$28+" },
+        { name: "Ladies Cut and Style", price: "$50+" },
+        { name: "Shampoo and Style", price: "$27+" },
+        { name: "Hair Color Root Touchup", price: "$60+" },
+        { name: "Highlights", price: "$95+" },
+        { name: "Perm", price: "$65+" },
+        { name: "Updo", price: "$60+" },
+        { name: "Braids", price: "$40+" },
+        { name: "Balayage/Ombre", price: "$150+" },
+        { name: "Makeup", price: "$55+" },
+        { name: "Makeup with Lashes (Strips)", price: "$75" },
+      ],
+    },
+    {
       title: "Manicure",
       services: [
         { name: "Classic Manicure", price: "$20" },
@@ -62,24 +80,6 @@ export default function ServicesPage() {
       ],
     },
     {
-      title: "Hair Services",
-      services: [
-        { name: "Men's Cut", price: "$25+" },
-        { name: "Men's Cut w Shampoo", price: "$25+" },
-        { name: "Ladies Cut", price: "$28+" },
-        { name: "Ladies Cut and Style", price: "$50+" },
-        { name: "Shampoo and Style", price: "$27+" },
-        { name: "Hair Color Root Touchup", price: "$60+" },
-        { name: "Highlights", price: "$95+" },
-        { name: "Perm", price: "$65+" },
-        { name: "Updo", price: "$60+" },
-        { name: "Braids", price: "$40+" },
-        { name: "Balayage/Ombre", price: "$150+" },
-        { name: "Makeup", price: "$55+" },
-        { name: "Makeup with Lashes (Strips)", price: "$75" },
-      ],
-    },
-    {
       title: "Permanent Makeup",
       services: [
         { name: "Eyebrows Ombre/Microblading", price: "$380+" },
@@ -94,21 +94,6 @@ export default function ServicesPage() {
         { name: "Eyelash Extensions Fill", price: "$45+" },
         { name: "Eyelash Lift and Tint", price: "$55" },
         { name: "Eyelash Lift", price: "$45" },
-      ],
-    },
-    {
-      title: "Other Services",
-      services: [
-        { name: "Polish Change (Hands)", price: "$12+" },
-        { name: "Polish Change Toes", price: "$15+" },
-        { name: "Gel Polish Change", price: "$25" },
-        { name: "American/French", price: "$5" },
-        { name: "Acrylic Nail Fix", price: "$5+" },
-        { name: "Design", price: "$5" },
-        { name: "Soak Off", price: "$10" },
-        { name: "Callus Treatment", price: "$10" },
-        { name: "Paraffin Dip", price: "$10+" },
-        { name: "Foot Massage", price: "$10+" },
       ],
     },
     {
@@ -160,6 +145,21 @@ export default function ServicesPage() {
             "A new and revolutionary, prevents and helps reduce the visible signs of aging in a holistic way",
         },
         { name: "Eye Treatment", price: "$25", description: "Brightening dark circles and relief puffiness." },
+      ],
+    },
+    {
+      title: "Other Services",
+      services: [
+        { name: "Polish Change (Hands)", price: "$12+" },
+        { name: "Polish Change Toes", price: "$15+" },
+        { name: "Gel Polish Change", price: "$25" },
+        { name: "American/French", price: "$5" },
+        { name: "Acrylic Nail Fix", price: "$5+" },
+        { name: "Design", price: "$5" },
+        { name: "Soak Off", price: "$10" },
+        { name: "Callus Treatment", price: "$10" },
+        { name: "Paraffin Dip", price: "$10+" },
+        { name: "Foot Massage", price: "$10+" },
       ],
     },
   ]
@@ -314,6 +314,9 @@ export default function ServicesPage() {
             <div>
               <h3 className="text-2xl font-bold text-rose-400 mb-4">Emmy's Spa</h3>
               <p className="text-gray-300 mb-4">Your premier beauty destination in St Pete Beach, Florida.</p>
+              <span className="block font-semibold text-gray-200 mb-2">Prefer to book by phone?</span>
+              <a href="tel:7273604108" className="text-rose-400 underline mb-4 inline-block">(727) 360-4108</a>
+              <span className="block text-sm text-gray-300 mb-4">You can also call to book your appointment!</span>
               <div className="mb-2">
                 <span className="block text-md font-semibold text-gray-200 mb-2">Reviews & Socials</span>
               </div>

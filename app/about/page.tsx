@@ -109,19 +109,12 @@ export default function AboutPage() {
               Your premier beauty destination in St Pete Beach, Florida
             </p>
           </div>
-
-          <div className="-mt-2">
-            <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-16 md:h-24">
-              <path fill="#fff" d="M0,0 C480,100 960,0 1440,100 L1440,100 L0,100 Z" />
-            </svg>
-          </div>
-
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
             <div>
               <h2 className="text-3xl font-bold text-gray-800 mb-6">Our Story</h2>
               <p className="text-lg text-gray-600 mb-6">
                 Located in the heart of St Pete Beach, Emmy's Spa has been providing exceptional beauty and wellness
-                services for over a decade. Our team of skilled professionals is dedicated to helping you look and feel
+                services for over 20 years. Our team of skilled professionals is dedicated to helping you look and feel
                 your absolute best.
               </p>
               <p className="text-lg text-gray-600 mb-8">
@@ -140,10 +133,9 @@ export default function AboutPage() {
               />
             </div>
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
             <div className="text-center">
-              <div className="text-4xl font-bold text-rose-400 mb-2">10+</div>
+              <div className="text-4xl font-bold text-rose-400 mb-2">20+</div>
               <div className="text-lg font-semibold text-gray-800 mb-2">Years Experience</div>
               <div className="text-gray-600">Serving St Pete Beach community</div>
             </div>
@@ -158,7 +150,6 @@ export default function AboutPage() {
               <div className="text-gray-600">Consistently excellent service</div>
             </div>
           </div>
-
           <div className="bg-rose-50 rounded-lg p-8 md:p-12">
             <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">Our Mission</h2>
             <p className="text-lg text-gray-600 text-center max-w-4xl mx-auto">
@@ -178,6 +169,9 @@ export default function AboutPage() {
             <div>
               <h3 className="text-2xl font-bold text-rose-400 mb-4">Emmy's Spa</h3>
               <p className="text-gray-300 mb-4">Your premier beauty destination in St Pete Beach, Florida.</p>
+              <span className="block font-semibold text-gray-200 mb-2">Prefer to book by phone?</span>
+              <a href="tel:7273604108" className="text-rose-400 underline mb-4 inline-block">(727) 360-4108</a>
+              <span className="block text-sm text-gray-300 mb-4">You can also call to book your appointment!</span>
               <div className="mb-2">
                 <span className="block text-md font-semibold text-gray-200 mb-2">Reviews & Socials</span>
               </div>

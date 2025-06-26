@@ -116,7 +116,7 @@ export default function GalleryPage() {
       </nav>
 
       {/* Gallery Section */}
-      <section className="pt-24 pb-20 bg-white">
+      <section className="pt-24 pb-20 bg-gradient-to-b from-rose-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h1 className="text-5xl font-bold text-gray-800 mb-6 drop-shadow-2xl animate-fade-in-up">Gallery</h1>
@@ -124,6 +124,13 @@ export default function GalleryPage() {
               Take a look at our beautiful spa and some of our amazing work. See the quality and care that goes into
               every service we provide.
             </p>
+          </div>
+
+          {/* Static filter/tag bar for visual pop */}
+          <div className="flex justify-center gap-4 mb-10">
+            <span className="px-4 py-2 rounded-full bg-rose-100 text-rose-500 font-semibold shadow">Nails</span>
+            <span className="px-4 py-2 rounded-full bg-blue-100 text-blue-500 font-semibold shadow">Hair</span>
+            <span className="px-4 py-2 rounded-full bg-green-100 text-green-500 font-semibold shadow">Makeup</span>
           </div>
 
           <div className="-mt-2">
@@ -136,7 +143,7 @@ export default function GalleryPage() {
             {galleryImages.map((image, index) => (
               <div
                 key={index}
-                className="group relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105"
+                className="group relative overflow-hidden rounded-2xl shadow-lg bg-white/70 backdrop-blur-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:border-4 hover:border-rose-200"
               >
                 <Image
                   src={image.src || "/placeholder.svg"}
@@ -145,10 +152,10 @@ export default function GalleryPage() {
                   height={400}
                   className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300 flex items-end">
-                  <div className="p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 backdrop-blur-md bg-black/30 rounded-b-lg">
-                    <p className="font-semibold">{image.alt}</p>
-                    <p className="text-sm">{image.category}</p>
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-end">
+                  <div className="p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 backdrop-blur-md bg-black/30 rounded-b-lg translate-y-8 group-hover:translate-y-0 group-hover:delay-100 transition-all">
+                    <p className="font-semibold text-lg drop-shadow">{image.alt}</p>
+                    <p className="text-sm text-rose-200 font-semibold drop-shadow">{image.category}</p>
                   </div>
                 </div>
               </div>
@@ -175,6 +182,9 @@ export default function GalleryPage() {
             <div>
               <h3 className="text-2xl font-bold text-rose-400 mb-4">Emmy's Spa</h3>
               <p className="text-gray-300 mb-4">Your premier beauty destination in St Pete Beach, Florida.</p>
+              <span className="block font-semibold text-gray-200 mb-2">Prefer to book by phone?</span>
+              <a href="tel:7273604108" className="text-rose-400 underline mb-4 inline-block">(727) 360-4108</a>
+              <span className="block text-sm text-gray-300 mb-4">You can also call to book your appointment!</span>
               <div className="mb-2">
                 <span className="block text-md font-semibold text-gray-200 mb-2">Reviews & Socials</span>
               </div>
