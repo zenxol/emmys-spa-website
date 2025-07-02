@@ -10,79 +10,65 @@ export default function ServicesPage() {
 
   const serviceCategories = [
     {
-      title: "Hair Services",
-      services: [
-        { name: "Men's Cut", price: "$25+" },
-        { name: "Men's Cut w Shampoo", price: "$25+" },
-        { name: "Ladies Cut", price: "$28+" },
-        { name: "Ladies Cut and Style", price: "$50+" },
-        { name: "Shampoo and Style", price: "$27+" },
-        { name: "Hair Color Root Touchup", price: "$60+" },
-        { name: "Highlights", price: "$95+" },
-        { name: "Perm", price: "$65+" },
-        { name: "Updo", price: "$60+" },
-        { name: "Braids", price: "$40+" },
-        { name: "Balayage/Ombre", price: "$150+" },
-        { name: "Makeup", price: "$55+" },
-        { name: "Makeup with Lashes (Strips)", price: "$75" },
-      ],
-    },
-    {
       title: "Manicure",
       services: [
-        { name: "Classic Manicure", price: "$20" },
-        { name: "Deluxe Manicure", price: "$30" },
+        { name: "Classic Manicure", price: "$18" },
+        { name: "Deluxe Manicure", price: "$28" },
         { name: "Gel/Shellac Manicure", price: "$35" },
       ],
     },
     {
       title: "Pedicure",
       services: [
-        {
-          name: "Classic Spa Pedicure",
-          price: "$35",
-          description: "Balance & Relax from your soles up, as your feet and lower legs are soothed and stimulated",
-        },
-        {
-          name: "Deluxe Pedicure",
-          price: "$45",
-          description:
-            "Relieve tired, achy legs and feet with this remineralizing pedicure. This service has callus remover",
-        },
-        { name: "Deluxe Pedicure w Paraffin Wax", price: "$55" },
-        { name: "Gel Pedicure", price: "$60" },
-        {
-          name: "Super Deluxe Pedicure",
-          price: "$65",
-          description:
-            "Invigorate and renew your feet with our fabulous organic spa pedicure. This gives your feet a balance of renewal",
-        },
-        { name: "Classic Pedicure with Gel", price: "$45" },
-        { name: "Deluxe Pedicure with Gel", price: "$55" },
-        { name: "Super Deluxe Pedicure with Gel", price: "$75" },
+        { name: "Classic Spa Pedicure", price: "$30", type: "Reg", description: "Balance & Relax from your soles up, as your feet and lower legs are soothed and stimulated" },
+        { name: "Classic Spa Pedicure", price: "$45", type: "Gel", description: "With gel polish" },
+        { name: "Deluxe Pedicure", price: "$40", type: "Reg", description: "Relieve tired, achy legs and feet with this remineralizing pedicure. This service has callus remover" },
+        { name: "Deluxe Pedicure", price: "$55", type: "Gel", description: "With gel polish" },
+        { name: "Deluxe Pedicure w Paraffin Wax", price: "$48", type: "Reg", description: "Includes paraffin wax treatment" },
+        { name: "Deluxe Pedicure w Paraffin Wax", price: "$60", type: "Gel", description: "With gel polish and paraffin wax treatment" },
+        { name: "Super Deluxe Pedicure", price: "$65", type: "Reg", description: "Invigorate and renew your feet with our fabulous organic spa pedicure. This gives your feet a balance of renewal" },
+        { name: "Super Deluxe Pedicure", price: "$75", type: "Gel", description: "With gel polish and organic spa treatment" },
       ],
     },
     {
       title: "Nail Enhancements",
       services: [
-        { name: "Acrylic Full Set", price: "$40+" },
-        { name: "Acrylic Fill", price: "$30" },
-        { name: "French Tip Gel", price: "$45+" },
-        { name: "Acrylic Gel Color Full Set", price: "$55+" },
-        { name: "Acrylic Gel Color Fill", price: "$45" },
-        { name: "Ombre Acrylic Full Set", price: "$60+" },
-        { name: "Ombre Acrylic Fill", price: "$50" },
-        { name: "Pink and White Full Set", price: "$55+" },
-        { name: "Pink and White Fill", price: "$45" },
-        { name: "Dipping Powder Full Set", price: "$45+" },
-        { name: "Pink and White Dip", price: "$55+" },
-        { name: "Ombre Dip", price: "$55+" },
+        { name: "Acrylic", price: "$45+", type: "Full Set" },
+        { name: "Acrylic", price: "$30", type: "Fill-in" },
+        { name: "French Tip Gel", price: "$45+", type: "Full Set" },
+        { name: "Acrylic Gel Color", price: "$55+", type: "Full Set" },
+        { name: "Acrylic Gel Color", price: "$45", type: "Fill-in" },
+        { name: "Ombre Acrylic", price: "$60+", type: "Full Set" },
+        { name: "Ombre Acrylic", price: "$50", type: "Fill-in" },
+        { name: "Pink and White", price: "$55+", type: "Full Set" },
+        { name: "Pink and White", price: "$45", type: "Fill-in" },
+        { name: "Dipping Powder", price: "$45+", type: "Full Set" },
+        { name: "Pink and White Dip", price: "$55+", type: "Full Set" },
+        { name: "Ombre Dip", price: "$55+", type: "Full Set" },
+      ],
+    },
+    {
+      title: "Hair Services",
+      services: [
+        { name: "Men's Cut", price: "$20+" },
+        { name: "Men's Cut w Shampoo", price: "$25+" },
+        { name: "Ladies Cut", price: "$25+" },
+        { name: "Ladies Cut and Style", price: "$45+" },
+        { name: "Shampoo and Style", price: "$27+" },
+        { name: "Hair Color Root Touchup", price: "$50+" },
+        { name: "Highlights", price: "$85+" },
+        { name: "Perm", price: "$65+" },
+        { name: "Updo", price: "$60+" },
+        { name: "Braids", price: "$40+" },
+        { name: "Balayage/Ombre", price: "$150+" },
+        { name: "Makeup", price: "$55+" },
+        { name: "Makeup with Lashes (Strips)", price: "$75+" },
       ],
     },
     {
       title: "Permanent Makeup",
       services: [
-        { name: "Eyebrows Ombre/Microblading", price: "$380+" },
+        { name: "Eyebrows Ombre/Microblading", price: "$280+" },
         { name: "Eyeliner Upper and Lower", price: "$280" },
         { name: "Lips", price: "$350" },
       ],
@@ -90,20 +76,28 @@ export default function ServicesPage() {
     {
       title: "Eyelashes",
       services: [
-        { name: "Eyelash Extensions Full Set", price: "$95+" },
-        { name: "Eyelash Extensions Fill", price: "$45+" },
+        { name: "Eyelash Extensions", price: "$95+", type: "Full Set" },
+        { name: "Eyelash Extensions", price: "$45+", type: "Fill" },
         { name: "Eyelash Lift and Tint", price: "$55" },
         { name: "Eyelash Lift", price: "$45" },
       ],
     },
     {
+      title: "Eyebrows",
+      services: [
+        { name: "Brow Tinting", price: "$15" },
+        { name: "Brow Tinting, Waxing, and Shaping", price: "$35" },
+        { name: "Brow Laminating, Tinting, and Shaping", price: "$45" },
+      ],
+    },
+    {
       title: "Waxing",
       services: [
-        { name: "Eyebrows", price: "$15" },
-        { name: "Lip", price: "$8" },
+        { name: "Eyebrows", price: "$12" },
+        { name: "Lip", price: "$7" },
         { name: "Chin", price: "$10" },
-        { name: "Full Arms", price: "$40" },
-        { name: "Half Arms", price: "$30" },
+        { name: "Full Arms", price: "$40+" },
+        { name: "Half Arms", price: "$30+" },
         { name: "Under Arm", price: "$25" },
         { name: "Full Legs", price: "$55" },
         { name: "Half Legs", price: "$35+" },
@@ -141,8 +135,7 @@ export default function ServicesPage() {
         {
           name: "Advance Nacar Treatment",
           price: "$120",
-          description:
-            "A new and revolutionary, prevents and helps reduce the visible signs of aging in a holistic way",
+          description: "Brightening with an advanced formula made with the most powerful next generation acids together with advanced liposomal technology. Helps to improve the super facial layer of dark spots and stimulates skin renewal."
         },
         { name: "Eye Treatment", price: "$25", description: "Brightening dark circles and relief puffiness." },
       ],
@@ -151,7 +144,7 @@ export default function ServicesPage() {
       title: "Other Services",
       services: [
         { name: "Polish Change (Hands)", price: "$12+" },
-        { name: "Polish Change Toes", price: "$15+" },
+        { name: "Polish Change (Feet)", price: "$15+" },
         { name: "Gel Polish Change", price: "$25" },
         { name: "American/French", price: "$5" },
         { name: "Acrylic Nail Fix", price: "$5+" },
@@ -167,7 +160,7 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 bg-white/70 backdrop-blur-xl shadow-lg z-50 border-b border-white/30">
+      <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm shadow-sm z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex-shrink-0">
@@ -206,14 +199,6 @@ export default function ServicesPage() {
                 >
                   Contact
                 </Link>
-                <a
-                  href="https://book.squareup.com/appointments/4goy5s8ovk67r0/location/LMW7ZYEASQEDT/services"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white bg-rose-500 hover:bg-rose-600 px-4 py-2 rounded-full font-medium shadow transition-all duration-200 ml-2 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-rose-400 focus:ring-offset-2 animate-glow"
-                >
-                  Book
-                </a>
               </div>
             </div>
 
@@ -257,17 +242,11 @@ export default function ServicesPage() {
       <section className="pt-24 pb-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h1 className="text-5xl font-bold text-gray-800 mb-6 drop-shadow-2xl animate-fade-in-up">Our Services</h1>
+            <h1 className="text-5xl font-bold text-gray-800 mb-6">Our Services</h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Discover our comprehensive range of beauty and wellness services, each designed to enhance your natural
               beauty and promote relaxation.
             </p>
-          </div>
-
-          <div className="-mt-2">
-            <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-16 md:h-24">
-              <path fill="#fff" d="M0,0 C480,100 960,0 1440,100 L1440,100 L0,100 Z" />
-            </svg>
           </div>
 
           <div className="space-y-12">
@@ -281,11 +260,17 @@ export default function ServicesPage() {
                       className="hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
                     >
                       <CardHeader>
-                        <CardTitle className="text-lg text-gray-800">{service.name}</CardTitle>
+                        <CardTitle className="text-lg text-gray-800">{service.name}
+                          {"type" in service && service.type && (
+                            <span className="ml-2 px-2 py-1 rounded bg-rose-100 text-rose-500 text-xs font-semibold align-middle">{service.type}</span>
+                          )}
+                        </CardTitle>
                       </CardHeader>
                       <CardContent>
                         <div className="text-2xl font-bold text-rose-400 mb-2">{service.price}</div>
-                        {service.description && <p className="text-gray-600 text-sm">{service.description}</p>}
+                        {"description" in service && service.description && (
+                          <p className="text-gray-600 text-sm">{service.description}</p>
+                        )}
                       </CardContent>
                     </Card>
                   ))}
@@ -314,12 +299,6 @@ export default function ServicesPage() {
             <div>
               <h3 className="text-2xl font-bold text-rose-400 mb-4">Emmy's Spa</h3>
               <p className="text-gray-300 mb-4">Your premier beauty destination in St Pete Beach, Florida.</p>
-              <span className="block font-semibold text-gray-200 mb-2">Prefer to book by phone?</span>
-              <a href="tel:7273604108" className="text-rose-400 underline mb-4 inline-block">(727) 360-4108</a>
-              <span className="block text-sm text-gray-300 mb-4">You can also call to book your appointment!</span>
-              <div className="mb-2">
-                <span className="block text-md font-semibold text-gray-200 mb-2">Reviews & Socials</span>
-              </div>
               <div className="flex space-x-4">
                 <a
                   href="https://www.facebook.com/beautyandmorebyemmy/"
