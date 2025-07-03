@@ -207,7 +207,7 @@ export default function ContactPage() {
               </div>
 
               <a
-                href="https://book.squareup.com/appointments/4goy5s8ovk67r0/location/LMW7ZYEASQEDT/services"
+                href="https://book.squareup.com/appointments/fszhqc9c2bcr55/location/L6EP53HEFE8RQ/services"
                 target="_blank"
                 rel="noopener noreferrer"
               >

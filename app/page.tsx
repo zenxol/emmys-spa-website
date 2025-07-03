@@ -52,7 +52,7 @@ export default function HomePage() {
                   Contact
                 </Link>
                 <a
-                  href="https://book.squareup.com/appointments/4goy5s8ovk67r0/location/LMW7ZYEASQEDT/services"
+                  href="https://book.squareup.com/appointments/fszhqc9c2bcr55/location/L6EP53HEFE8RQ/services"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white bg-rose-500 hover:bg-rose-600 px-4 py-2 rounded-full font-medium shadow transition-all duration-200 ml-2 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-rose-400 focus:ring-offset-2 animate-glow"
@@ -123,7 +123,7 @@ export default function HomePage() {
               </Button>
             </Link>
             <a
-              href="https://book.squareup.com/appointments/4goy5s8ovk67r0/location/LMW7ZYEASQEDT/services"
+              href="https://book.squareup.com/appointments/fszhqc9c2bcr55/location/L6EP53HEFE8RQ/services"
               target="_blank"
               rel="noopener noreferrer"
             >
