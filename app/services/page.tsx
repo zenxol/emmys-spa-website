@@ -12,8 +12,8 @@ export default function ServicesPage() {
     {
       title: "Manicure",
       services: [
-        { name: "Classic Manicure", price: "$18" },
-        { name: "Deluxe Manicure", price: "$28" },
+        { name: "Classic Manicure", price: "$20" },
+        { name: "Deluxe Manicure", price: "$30" },
         { name: "Gel/Shellac Manicure", price: "$35" },
       ],
     },
@@ -21,11 +21,11 @@ export default function ServicesPage() {
       title: "Pedicure",
       services: [
         { name: "Classic Spa Pedicure", price: "$30", type: "Reg", description: "Balance & Relax from your soles up, as your feet and lower legs are soothed and stimulated" },
-        { name: "Classic Spa Pedicure", price: "$45", type: "Gel", description: "With gel polish" },
-        { name: "Deluxe Pedicure", price: "$40", type: "Reg", description: "Relieve tired, achy legs and feet with this remineralizing pedicure. This service has callus remover" },
-        { name: "Deluxe Pedicure", price: "$55", type: "Gel", description: "With gel polish" },
-        { name: "Deluxe Pedicure w Paraffin Wax", price: "$48", type: "Reg", description: "Includes paraffin wax treatment" },
-        { name: "Deluxe Pedicure w Paraffin Wax", price: "$60", type: "Gel", description: "With gel polish and paraffin wax treatment" },
+        { name: "Classic Spa Pedicure", price: "$50", type: "Gel", description: "With gel polish" },
+        { name: "Deluxe Pedicure", price: "$45", type: "Reg", description: "Relieve tired, achy legs and feet with this remineralizing pedicure. This service has callus remover" },
+        { name: "Deluxe Pedicure", price: "$60", type: "Gel", description: "With gel polish" },
+        { name: "Deluxe Pedicure w Paraffin Wax", price: "$58", type: "Reg", description: "Includes paraffin wax treatment" },
+        { name: "Deluxe Pedicure w Paraffin Wax", price: "$70", type: "Gel", description: "With gel polish and paraffin wax treatment" },
         { name: "Super Deluxe Pedicure", price: "$65", type: "Reg", description: "Invigorate and renew your feet with our fabulous organic spa pedicure. This gives your feet a balance of renewal" },
         { name: "Super Deluxe Pedicure", price: "$75", type: "Gel", description: "With gel polish and organic spa treatment" },
       ],
@@ -33,7 +33,7 @@ export default function ServicesPage() {
     {
       title: "Nail Enhancements",
       services: [
-        { name: "Acrylic", price: "$45+", type: "Full Set" },
+        { name: "Acrylic", price: "$40+", type: "Full Set" },
         { name: "Acrylic", price: "$30", type: "Fill-in" },
         { name: "French Tip Gel", price: "$45+", type: "Full Set" },
         { name: "Acrylic Gel Color", price: "$55+", type: "Full Set" },
@@ -50,14 +50,14 @@ export default function ServicesPage() {
     {
       title: "Hair Services",
       services: [
-        { name: "Men's Cut", price: "$20+" },
-        { name: "Men's Cut w Shampoo", price: "$25+" },
-        { name: "Ladies Cut", price: "$25+" },
+        { name: "Men's Cut", price: "$25+" },
+        { name: "Men's Cut w Shampoo", price: "$30+" },
+        { name: "Ladies Cut", price: "$28+" },
         { name: "Ladies Cut and Style", price: "$45+" },
-        { name: "Shampoo and Style", price: "$27+" },
-        { name: "Hair Color Root Touchup", price: "$50+" },
-        { name: "Highlights", price: "$85+" },
-        { name: "Perm", price: "$65+" },
+        { name: "Shampoo and Style", price: "$40+" },
+        { name: "Hair Color Root Touchup", price: "$60+" },
+        { name: "Highlights", price: "$95+" },
+        { name: "Perm", price: "$75+" },
         { name: "Updo", price: "$60+" },
         { name: "Braids", price: "$40+" },
         { name: "Balayage/Ombre", price: "$150+" },
@@ -68,7 +68,7 @@ export default function ServicesPage() {
     {
       title: "Permanent Makeup",
       services: [
-        { name: "Eyebrows Ombre/Microblading", price: "$280+" },
+        { name: "Eyebrows Ombre/Microblading", price: "$380+" },
         { name: "Eyeliner Upper and Lower", price: "$280" },
         { name: "Lips", price: "$350" },
       ],
@@ -93,7 +93,7 @@ export default function ServicesPage() {
     {
       title: "Waxing",
       services: [
-        { name: "Eyebrows", price: "$12" },
+        { name: "Eyebrows", price: "$15" },
         { name: "Lip", price: "$7" },
         { name: "Chin", price: "$10" },
         { name: "Full Arms", price: "$40+" },
@@ -143,7 +143,7 @@ export default function ServicesPage() {
     {
       title: "Other Services",
       services: [
-        { name: "Polish Change (Hands)", price: "$12+" },
+        { name: "Polish Change (Hands)", price: "$15+" },
         { name: "Polish Change (Feet)", price: "$15+" },
         { name: "Gel Polish Change", price: "$25" },
         { name: "American/French", price: "$5" },
