@@ -20,7 +20,7 @@ export default function ServicesPage() {
     {
       title: "Pedicure",
       services: [
-        { name: "Classic Spa Pedicure", price: "$30", type: "Reg", description: "Balance & Relax from your soles up, as your feet and lower legs are soothed and stimulated" },
+        { name: "Classic Spa Pedicure", price: "$35", type: "Reg", description: "Balance & Relax from your soles up, as your feet and lower legs are soothed and stimulated" },
         { name: "Classic Spa Pedicure", price: "$50", type: "Gel", description: "With gel polish" },
         { name: "Deluxe Pedicure", price: "$45", type: "Reg", description: "Relieve tired, achy legs and feet with this remineralizing pedicure. This service has callus remover" },
         { name: "Deluxe Pedicure", price: "$60", type: "Gel", description: "With gel polish" },
@@ -69,7 +69,7 @@ export default function ServicesPage() {
       title: "Permanent Makeup",
       services: [
         { name: "Eyebrows Ombre/Microblading", price: "$380+" },
-        { name: "Eyeliner Upper and Lower", price: "$280" },
+        { name: "Eyeliner Upper and Lower", price: "$250" },
         { name: "Lips", price: "$350" },
       ],
     },
@@ -199,6 +199,14 @@ export default function ServicesPage() {
                 >
                   Contact
                 </Link>
+                <a
+                  href="https://book.squareup.com/appointments/fszhqc9c2bcr55/location/L6EP53HEFE8RQ/services"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white bg-rose-500 hover:bg-rose-600 px-4 py-2 rounded-full font-medium shadow transition-all duration-200 ml-2 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-rose-400 focus:ring-offset-2 animate-glow"
+                >
+                  Book
+                </a>
               </div>
             </div>
 
@@ -233,6 +241,14 @@ export default function ServicesPage() {
               <Link href="/contact" className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-rose-400">
                 Contact
               </Link>
+              <a
+                href="https://book.squareup.com/appointments/fszhqc9c2bcr55/location/L6EP53HEFE8RQ/services"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block px-3 py-2 text-base font-medium text-white bg-rose-500 hover:bg-rose-600 rounded-full text-center shadow transition-all duration-200 mt-2 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-rose-400 focus:ring-offset-2 animate-glow"
+              >
+                Book
+              </a>
             </div>
           </div>
         )}
